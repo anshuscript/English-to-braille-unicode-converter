@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>neog-lesson-4</title>
-</head>
-<body>
-  <h5>This is lesson-5</h5>
 
-  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neog-lesson-4</title>
+    <style>
+        textarea {
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        #output {
+            border: 1px solid black;
+            height: 10vh;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        button{
+          height: 3rem;
+          width: 15rem;
+          font-size: x-large;
+          color:rgb(206, 190, 192);
+          background-color: green;
+          margin-left: 30rem;
+          border-radius: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> English to Braille Unicode Coverter App</h1>
+    <textarea id="txt-input"
+        placeholder="Write  in English and app will convert it into braille unicode"></textarea>
+    <button id="btn-translate">Click to Convert</button>
+
+    <div style="font-size: larger;"> Translated unicode</div>
+    <div id="output"></div>
+    <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
